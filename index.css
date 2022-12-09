@@ -1,39 +1,63 @@
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif
 }
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.settingsHeader {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0.2em 1em 0.2em 2em;
 }
 logo {
   font-size: 2em;
 }
 .home_menu {
   display: flex;
+  align-items: center;
 }
-.home_menu > a ,.dropdown-content, .dropdown > a{
+.home_menu > a,
+.dropdown-content,
+.dropdown > a {
   font-size: 1.5em;
   text-decoration: none;
   color: black;
-  display: flex;
   align-items: center;
-  padding: 16px;
+}
+
+.dropdown,
+.notImg {
+  padding: 15px 15px 15px 15px;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   visibility: hidden;
   opacity: 0;
-  transition: visibility 0s, opacity 1s linear;
+  transition: visibility 0s, opacity 0.3s linear;
   position: absolute;
-  min-width: 160px;
+  min-width: 120px;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 1.5em;
+  margin-left: -0.4em;
+  background-color: rgba(255, 255, 255);
+  border-radius: 12px;
+  padding: 0.3em;
 }
 
 /* Links inside the dropdown */
@@ -50,9 +74,44 @@ logo {
   visibility: visible;
   opacity: 1;
 }
-.dropdown-content > a{
-  transition: .3s;
+.dropdown-content > a {
+  transition: 0.3s;
 }
 .dropdown-content > a:hover {
   transform: scale(1.15);
+}
+.logo_panier {
+  padding: 5px 15px 0 15px;
+}
+.imgFull {
+  width: 100%;
+  object-fit: cover;
+}
+.a {
+  position: absolute;
+  right: 2em;
+  top: 1em;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 4em;
+  font-weight: 700;
+  -webkit-text-stroke: 1px black;
+}
+.button {
+  position:absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 1px solid black;
+  color: black;
+  border-radius: 2em;
+  padding: .5em 1em;
+  font-size: .4em;
+  font-weight: 500;
+  top: 10em;
+  left: .5em;
+  transition: .3s;
+}
+.button:hover{
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
+  cursor: pointer;
 }
