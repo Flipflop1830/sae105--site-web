@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+header {
+    position: fixed;
+    top: 2em;
+    left: 7em;
+    width: 90%;
+    font-family: "Lobster", sans-serif;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 250px;
+    z-index: 1;
+}
+@media (prefers-reduced-motion: no-preference) {
+    .square-animation {
+        animation: wipe-enter 1s 1;
+    }
+}
+@keyframes wipe-enter {
+    0% {
+        transform: scale(0, 0.025);
+    }
+    50% {
+        transform: scale(1, 0.025);
+    }
+}
+.settingsHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2em 1em 0.2em 2em;
+}
+.logo {
+    text-decoration: none;
+    font-weight: 400;
+}
+logo {
+    font-size: 2em;
+    color: black;
+}
+.home_menu {
+    display: flex;
+    align-items: center;
+}
+.home_menu > .notImg,
+.dropdown-content,
+.dropdown > a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+}
+
+.dropdown,
+.notImg {
+    padding: 15px 15px 15px 15px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: flex;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.3s, opacity 0.3s linear;
+    position: absolute;
+    min-width: 120px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1.5em;
+    margin-left: -0.7em;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    padding: 0.3em;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.dropdown-content > a {
+    transition: 0.3s;
+}
+.dropdown-content > a:hover {
+    transform: scale(1.15);
+}
+.logo_panier {
+    padding: 5px 15px 0 15px;
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 2em 0 0.5em 0;
+}
+.flexPart {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+.flexPart > div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4em 0 4em;
+}
+.flexPart > div > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+.titreFooter {
+    font-size: 1.6em;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.endFooter {
+    width: 80em;
+    margin: auto;
+}
+.endFooter > p {
+    display: flex;
+    justify-content: center;
+}
