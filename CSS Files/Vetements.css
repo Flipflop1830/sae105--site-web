@@ -24,7 +24,9 @@ section div img {
 }
 .text {
     position: absolute;
-    bottom: 0em;
+    bottom: 1em;
+    left: 50%;
+    transform: translate(-50%);
     color: white;
     font-size: 8em;
     font-family: "Lobster", sans-serif;
@@ -33,6 +35,6 @@ section div img {
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
-section div:hover > .text {
+section div:hover > a > .text {
     opacity: 1;
 }
