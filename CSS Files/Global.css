@@ -15,7 +15,7 @@ header {
     top: 2em;
     left: 5vw;
     width: 90%;
-    font-family: "Lobster", sans-serif;
+    font-weight: 500;
     background-color: rgba(255, 255, 255, 0.95);
     border-radius: 250px;
     z-index: 1;
@@ -42,6 +42,7 @@ header {
 .logo {
     text-decoration: none;
     font-weight: 400;
+    font-family: 'Lobster', sans-serif;
 }
 logo {
     font-size: 2em;

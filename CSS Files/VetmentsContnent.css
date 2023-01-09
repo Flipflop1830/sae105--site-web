@@ -66,7 +66,7 @@ li {
     outline: 0;
     overflow: hidden;
     background: none;
-    z-index: 1;
+    z-index: 0;
     cursor: pointer;
 }
 .AddPanier:hover {

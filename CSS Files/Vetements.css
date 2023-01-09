@@ -21,6 +21,7 @@ section div img {
     height: 100vh;
     object-fit: cover;
     position: relative;
+    display: block;
 }
 .text {
     position: absolute;
@@ -28,10 +29,9 @@ section div img {
     left: 50%;
     transform: translate(-50%);
     color: white;
-    font-size: 8em;
-    font-family: "Lobster", sans-serif;
+    font-size: 5em;
+    font-family: 'Lobster';
     -webkit-text-stroke: 2px black;
-    letter-spacing: .08em;
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
