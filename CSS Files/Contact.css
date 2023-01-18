@@ -1,6 +1,6 @@
 .imgFull {
     width: 100%;
-    height: 100vh;
+    height: 77em;
     object-fit: cover;
     display: block;
 }
@@ -18,6 +18,23 @@
     margin-top: 1em;
     display: flex;
     align-items: center;
+}
+.elementBas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 19em;
+}
+.element2 {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.marge{
+    margin-top: 1em;
+}
+textarea{
+    resize: none;
 }
 label {
     color: white;
@@ -119,7 +136,7 @@ textarea {
 .styles_regionLink__gFrZf path {
     cursor: pointer;
     fill: #036af0;
-    stroke: #0407d4a2;
+    stroke: #080a64a2;
     transition: fill .3s
 }
 
