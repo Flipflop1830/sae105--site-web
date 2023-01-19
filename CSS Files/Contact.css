@@ -137,9 +137,15 @@ textarea {
     cursor: pointer;
     fill: #036af0;
     stroke: #080a64a2;
-    transition: fill .3s
+    transition: fill .3s;
 }
 
 .styles_regionLink__gFrZf:hover path {
     fill: #2c0cb9
+}
+.Maps{
+    position: absolute;
+}
+path{
+    position: absolute;
 }
