@@ -12,76 +12,102 @@ $DDN = $_POST['DDN'];
 $sport = $_POST['sport'];
 $regionRadio = $_POST['regionRadio'];
 
+$lat = 0;
+$long = 0;
+
 switch ($regionRadio) {
     case "Bretagne":
         $lat = 48.2641;
         $long = -2.9202;
+        break;
     case "Basse Normandie":
         $lat = 48.8789;
         $long = -0.5157;
+        break;
     case "Ile de France":
         $lat = 48.85;
         $long = 2.6371;
+        break;
     case "Haute Normandie":
         $lat = 49.5247;
         $long = 0.8829;
+        break;
     case "Nord Pas de Calais":
         $lat = 50.4802;
         $long = 2.7938;
+        break;
     case "Picardie":
         $lat = 49.6637;
         $long = 2.5281;
+        break;
     case "Champagne Ardenne":
         $lat = 48.7935;
         $long = 4.4726;
+        break;
     case "Lorraine":
         $lat = 48.8745;
         $long = 6.2081;
+        break;
     case "Alsace":
         $lat = 48.3182;
         $long = 7.4417;
+        break;
     case "Franche Comté":
         $lat = 47.1344;
         $long = 6.0224;
+        break;
     case "Bourgogne":
         $lat = 47.0526;
         $long = 4.3838;
+        break;
     case "Centre":
         $lat = 46.2277;
         $long = 2.2138;
+        break;
     case "Pays de la Loire":
         $lat = 47.7633;
         $long = -0.3299;
+        break;
     case "Poitou Charentes":
         $lat = 46.2277;
         $long = 2.2138;
+        break;
     case "Poitou Charentes":
         $lat = 45.9036;
         $long = -0.3091;
+        break;
     case "Limousin":
         $lat = 45.8933;
         $long = 1.5697;
+        break;
     case "Auvergne":
         $lat = 45.7033;
         $long = 1.5697;
+        break;
     case "Rhône Alpes":
         $lat = 45.1696;
         $long = 5.4503;
+        break;
     case "Provence Alpes Côte D'Azur":
         $lat = 43.9352;
         $long = 6.068;
+        break;
     case "Languedoc Roussillon":
         $lat = 43.5913;
         $long = 3.2584;
+        break;
     case "Provence Alpes Côte D'Azur":
         $lat = 44.086;
         $long = 1.5209;
+        break;
     case "Aquitaine":
         $lat = 44.7003;
         $long = -0.2995;
+        break;
     case "Corse":
         $lat = 42.0397;
         $long = 9.0129;
+        break;
 }
 
 $content = file_get_contents("https://api.open-meteo.com/v1/forecast?latitude=$lat&longitude=$long&current_weather=true");
