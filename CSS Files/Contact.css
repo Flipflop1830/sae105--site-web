@@ -130,20 +130,8 @@ textarea {
 }
 
 .styles_regionLink__gFrZf path {
-  cursor: pointer;
   fill: #036af0;
   stroke: #080a64a2;
-  transition: fill 0.3s;
-}
-
-.styles_regionLink__gFrZf:hover path {
-  fill: #2c0cb9;
-}
-.Maps {
-  position: absolute;
-}
-path {
-  position: absolute;
 }
 
 .france_container {
@@ -153,12 +141,93 @@ path {
 .france_container input {
   position: absolute;
   top: 0;
+  cursor: pointer;
 }
-.france_container input#bretagne {
+.france_container input#Bretagne {
   left: 13%;
   top: 24%;
 }
-.france_container input#basse-normandie {
+.france_container input#BasseNormandie {
   left: 27%;
   top: 17%;
+}
+.france_container input#IleDeFrance {
+  left: 48%;
+  top: 19%;
+}
+.france_container input#HauteNormandie {
+  left: 38%;
+  top: 13%;
+}
+.france_container input#NordPasDeCalais {
+  left: 50%;
+  top: 3%;
+}
+.france_container input#Picardie {
+  left: 50%;
+  top: 11%;
+}
+.france_container input#ChampagneArdenne {
+  left: 61%;
+  top: 19%;
+}
+.france_container input#Lorraine {
+  left: 72%;
+  top: 18%;
+}
+.france_container input#Alsace {
+  left: 82%;
+  top: 21%;
+}
+.france_container input#FrancheComté {
+  left: 73%;
+  top: 33%;
+}
+.france_container input#Bourgogne {
+  left: 60%;
+  top: 34%;
+}
+.france_container input#Centre {
+  left: 42%;
+  top: 32%;
+}
+.france_container input#PaysDeLaLoire {
+  left: 25%;
+  top: 30%;
+}
+.france_container input#PoitouCharentes {
+  left: 30%;
+  top: 44%;
+}
+.france_container input#Limousin {
+  left: 42%;
+  top: 47%;
+}
+.france_container input#Auvergne {
+  left: 53%;
+  top: 48%;
+}
+.france_container input#RhôneAlpes {
+  left: 69%;
+  top: 51%;
+}
+.france_container input#ProvenceAlpesCôteAzur {
+  left: 75%;
+  top: 65%;
+}
+.france_container input#LanguedocRoussillon {
+  left: 54%;
+  top: 68%;
+}
+.france_container input#MidiPyrénées {
+  left: 40%;
+  top: 66%;
+}
+.france_container input#Aquitaine {
+  left: 28%;
+  top: 59%;
+}
+.france_container input#Corse {
+  left: 85%;
+  top: 76%;
 }
