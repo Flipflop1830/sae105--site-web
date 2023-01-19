@@ -1,145 +1,233 @@
 .imgFull {
-    width: 100%;
-    height: 77em;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 77em;
+  object-fit: cover;
+  display: block;
 }
 .form {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    left: 8em;
-    top: 10em;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding: 1em;
-    border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 8em;
+  top: 10em;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1em;
+  border-radius: 25px;
 }
 .element {
-    margin-top: 1em;
-    display: flex;
-    align-items: center;
+  margin-top: 1em;
+  display: flex;
+  align-items: center;
 }
 .elementBas {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 19em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 19em;
 }
 .element2 {
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
 }
-.marge{
-    margin-top: 1em;
+.marge {
+  margin-top: 1em;
 }
-textarea{
-    resize: none;
+textarea {
+  resize: none;
 }
 label {
-    color: white;
-    font-size: 2.5em;
+  color: white;
+  font-size: 2.5em;
 }
 input ~ label {
-    margin-left: 1.5em;
+  margin-left: 1.5em;
 }
 input,
 select {
-    margin-left: 1em;
-    border-radius: 25px;
-    font-size: 1.5em;
-    height: 2em;
-    padding: 0 0.5em;
+  margin-left: 1em;
+  border-radius: 25px;
+  font-size: 1.5em;
+  height: 2em;
+  padding: 0 0.5em;
 }
 .extraSpace {
-    width: 22em;
+  width: 22em;
 }
 textarea {
-    border-radius: 25px;
-    margin-left: 0.5em;
-    font-size: 1.5em;
-    padding: 0.5em;
+  border-radius: 25px;
+  margin-left: 0.5em;
+  font-size: 1.5em;
+  padding: 0.5em;
 }
 .button {
-    font-size: 1.2em;
-    border: 1px solid black;
-    color: black;
-    border-radius: 2em;
-    padding: 0.5em 1em;
-    font-weight: 600;
-    text-decoration: none;
-    top: 10em;
-    left: 0.5em;
-    transition: 0.3s;
+  font-size: 1.2em;
+  border: 1px solid black;
+  color: black;
+  border-radius: 2em;
+  padding: 0.5em 1em;
+  font-weight: 600;
+  text-decoration: none;
+  top: 10em;
+  left: 0.5em;
+  transition: 0.3s;
 }
 .button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    transform: scale(1.1);
-    cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.1);
+  cursor: pointer;
 }
-
-
-
-
 
 .styles_FranceRegionsSelector__ptUEE {
-    height: 100%;
+  height: 100%;
 }
 
-@media(min-width: 971px) {
-    .styles_FranceRegionsSelector__ptUEE {
-        align-items:center;
-        display: flex;
-        justify-content: flex-start
-    }
+@media (min-width: 971px) {
+  .styles_FranceRegionsSelector__ptUEE {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+  }
 }
 
 .styles_Map__fZeo1 svg {
-    min-height: 50rem
+  min-height: 50rem;
 }
 
 .styles_Map__fZeo1 path {
-    stroke-linecap: "round";
-    stroke-linejoin: "round";
-    stroke-miterlimit: 10;
-    transition: fill .3s ease-out
+  stroke-linecap: "round";
+  stroke-linejoin: "round";
+  stroke-miterlimit: 10;
+  transition: fill 0.3s ease-out;
 }
 
 .styles_FranceRegionsMap__jrn0P {
-    position: relative;
-    padding-top: 108.125%;
-    max-height: 80rem
+  position: relative;
+  padding-top: 108.125%;
+  max-height: 80rem;
 }
 
-.styles_FranceRegionsMap__jrn0P>svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0
+.styles_FranceRegionsMap__jrn0P > svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
-@media(min-width: 971px) {
-    .styles_FranceRegionsMap__jrn0P {
-        width:30rem
-    }
+@media (min-width: 971px) {
+  .styles_FranceRegionsMap__jrn0P {
+    width: 30rem;
+  }
 }
 
 .styles_island__sfoGv path {
-    stroke-width: 2
+  stroke-width: 2;
 }
 
 .styles_featured__cTPon path {
-    stroke-width: 3
+  stroke-width: 3;
 }
 
 .styles_regionLink__gFrZf path {
-    cursor: pointer;
-    fill: #036af0;
-    stroke: #080a64a2;
-    transition: fill .3s
+  fill: #036af0;
+  stroke: #080a64a2;
 }
 
-.styles_regionLink__gFrZf:hover path {
-    fill: #2c0cb9
+.france_container {
+  position: relative;
+}
+
+.france_container input {
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+.france_container input#Bretagne {
+  left: 13%;
+  top: 24%;
+}
+.france_container input#BasseNormandie {
+  left: 27%;
+  top: 17%;
+}
+.france_container input#IleDeFrance {
+  left: 48%;
+  top: 19%;
+}
+.france_container input#HauteNormandie {
+  left: 38%;
+  top: 13%;
+}
+.france_container input#NordPasDeCalais {
+  left: 50%;
+  top: 3%;
+}
+.france_container input#Picardie {
+  left: 50%;
+  top: 11%;
+}
+.france_container input#ChampagneArdenne {
+  left: 61%;
+  top: 19%;
+}
+.france_container input#Lorraine {
+  left: 72%;
+  top: 18%;
+}
+.france_container input#Alsace {
+  left: 82%;
+  top: 21%;
+}
+.france_container input#FrancheComté {
+  left: 73%;
+  top: 33%;
+}
+.france_container input#Bourgogne {
+  left: 60%;
+  top: 34%;
+}
+.france_container input#Centre {
+  left: 42%;
+  top: 32%;
+}
+.france_container input#PaysDeLaLoire {
+  left: 25%;
+  top: 30%;
+}
+.france_container input#PoitouCharentes {
+  left: 30%;
+  top: 44%;
+}
+.france_container input#Limousin {
+  left: 42%;
+  top: 47%;
+}
+.france_container input#Auvergne {
+  left: 53%;
+  top: 48%;
+}
+.france_container input#RhôneAlpes {
+  left: 69%;
+  top: 51%;
+}
+.france_container input#ProvenceAlpesCôteAzur {
+  left: 75%;
+  top: 65%;
+}
+.france_container input#LanguedocRoussillon {
+  left: 54%;
+  top: 68%;
+}
+.france_container input#MidiPyrénées {
+  left: 40%;
+  top: 66%;
+}
+.france_container input#Aquitaine {
+  left: 28%;
+  top: 59%;
+}
+.france_container input#Corse {
+  left: 85%;
+  top: 76%;
 }
