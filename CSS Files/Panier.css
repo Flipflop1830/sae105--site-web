@@ -1,0 +1,17 @@
+.topContent {
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    position: relative;
+    display: block;
+}
+.topText {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 8em;
+    -webkit-text-stroke: 2px black;
+    top: 1em;
+    margin: auto;
+}

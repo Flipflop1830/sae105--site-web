@@ -130,7 +130,7 @@ $direction = $weather->winddirection;
 </head>
 
 <body>
-    <header class="square, square-animation">
+<header class="square, square-animation">
         <div class="settingsHeader">
             <div>
                 <a class="logo" href="index.html">
@@ -141,23 +141,23 @@ $direction = $weather->winddirection;
                 <div class="dropdown">
                     <a class="dropbtn" href="Vetement.html">Vêtements</a>
                     <div class="dropdown-content">
-                        <a href="Homme.html">Hommes</a>
-                        <a href="Femme.html">Femmes</a>
-                        <a href="Enfant.html">Enfants</a>
+                        <a href="Homme.php">Hommes</a>
+                        <a href="Femme.php">Femmes</a>
+                        <a href="Enfant.php">Enfants</a>
                     </div>
                 </div>
                 <div class="dropdown">
                     <a class="dropbtn" href="Accessoires.html">Accessoires</a>
                     <div class="dropdown-content">
-                        <a href="Ski_nautique.html">Ski nautique</a>
-                        <a href="Planche_à_voile.html">Planche à voile</a>
-                        <a href="SUP.html">SUP</a>
-                        <a href="Canoë_Kayak.html">Canoë Kayak</a>
+                        <a href="Ski_nautique.php">Ski nautique</a>
+                        <a href="Planche_à_voile.php">Planche à voile</a>
+                        <a href="SUP.php">SUP</a>
+                        <a href="Canoë_Kayak.php">Canoë Kayak</a>
                     </div>
                 </div>
                 <a class="notImg" href="Tutoriels.html">Tutoriels</a>
                 <a class="notImg" href="Contact.html">Contact</a>
-                <a href="Pannier.html"><img class="logo_panier" src="../content/shopping-cart.png" width="45" /></a>
+                <a href="Panier.php"><img class="logo_panier" src="../content/shopping-cart.png" width="45" /></a>
             </div>
         </div>
     </header>
@@ -184,20 +184,20 @@ $direction = $weather->winddirection;
                 <a href="index.html" class="titreFooter">Accueil</a>
                 <a href="Tutoriels.html">Tutoriels</a>
                 <a href="Contact.html">Contact</a>
-                <a href="Pannier.html">Panier</a>
+                <a href="Panier.php">Panier</a>
             </div>
             <div>
                 <a href="Vetement.html" class="titreFooter">Vêtements</a>
-                <a href="Homme.html">Homme</a>
-                <a href="Femme.html">Femme</a>
-                <a href="Enfant.html">Enfant</a>
+                <a href="Homme.php">Homme</a>
+                <a href="Femme.php">Femme</a>
+                <a href="Enfant.php">Enfant</a>
             </div>
             <div>
                 <a href="Accessoires.html" class="titreFooter">Accessoires</a>
-                <a href="Ski_nautique.html">Ski nautique</a>
-                <a href="Planche_à_voile.html">Planche à voile</a>
-                <a href="SUP.html">SUP</a>
-                <a href="Canoë_Kayak.html">Canoë Kayak</a>
+                <a href="Ski_nautique.php">Ski nautique</a>
+                <a href="Planche_à_voile.php">Planche à voile</a>
+                <a href="SUP.php">SUP</a>
+                <a href="Canoë_Kayak.php">Canoë Kayak</a>
             </div>
             <div>
                 <a class="titreFooter">Langues</a>
@@ -207,10 +207,7 @@ $direction = $weather->winddirection;
         </div>
         <div class="endFooter">
             <hr />
-            <p>
-                Copyright © 2022 CADEL - MILLIES-LACROIX. Tous droits
-                réservés.
-            </p>
+            <p>Copyright © 2022 CADEL - MILLIES-LACROIX. Tous droits réservés.</p>
         </div>
     </footer>
 </body>
