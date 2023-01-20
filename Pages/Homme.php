@@ -48,7 +48,7 @@
                 src="../src/front-view-man-holding-canoe-and-oar.jpg"
                 class="topContent"
             />
-            <p class="topText">Homme</p>
+            <p class="topText">Hommes</p>
             <ul class="lsitOfContent">
                 <li class="content">
                     <img

@@ -42,7 +42,7 @@
     </header>
     <div class="main">
         <img src="../src/surfer-on-blue-wave.jpg" class="topContent" />
-        <p class="topText">Femme</p>
+        <p class="topText">Femmes</p>
         <ul class="lsitOfContent">
             <li class="content">
                 <img src="../src/image-ladybust-page-produit-kalypse-2-1.jpg" alt="" class="image" />

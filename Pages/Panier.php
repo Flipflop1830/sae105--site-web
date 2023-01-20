@@ -48,6 +48,7 @@
         <img src="../src/woman-relaxing-in-the-water-at-the-beach.jpg" class="topContent" />
         <p class="topText">Panier</p>
     </div>
+    
     <footer>
         <div class="flexPart">
             <div>
