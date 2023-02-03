@@ -1,7 +1,11 @@
 <?php
 
-?>
+$path = '../PanierContent.json';
+$jsonString = file_get_contents($path);
+$jsonData = json_decode($jsonString, true);
+$total = 0;
 
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +17,7 @@
 </head>
 
 <body>
-<header class="square, square-animation">
+    <header class="square, square-animation">
         <div class="settingsHeader">
             <div>
                 <a class="logo" href="index.html">
@@ -47,8 +51,31 @@
     <div class="main">
         <img src="../src/woman-relaxing-in-the-water-at-the-beach.jpg" class="topContent" />
         <p class="topText">Panier</p>
+        <ul>
+            <?php
+            foreach ($jsonData as $value) {
+                $src = $value['src'];
+                $titre = $value['Titre'];
+                $prix = $value['Prix'];
+                $qte = 'Quantité : ' . $value['Quantité'];
+
+                $total += $prix;
+
+                $prix = $prix . '€';
+
+                echo "<li><div class='spaced, noButton'><img src=$src class='image' />";
+                echo "<p class='titre'>$titre</p>";
+                echo "<p class='prix'>$prix</p>";
+                echo "<p class='qte'>$qte</p></div>";
+                echo "<div class='spaced, button'><button class='AddPanier'>Supprimer</button></div></li>";
+            }
+
+            $total = $total.'€';
+            echo "<p class='total'>Total : $total</p>";
+
+            ?>
+        </ul>
     </div>
-    
     <footer>
         <div class="flexPart">
             <div>

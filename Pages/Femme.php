@@ -51,13 +51,7 @@
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit, aperiam.
                 </p>
                 <p class="prix">6.99€</p>
-                <?php
-                function php_func()
-                {
-                    echo " Have a great day";
-                }
-                ?>
-                <button class="AddPanier" onclick="php_func();">Ajouter au panier</button>
+                <button class="AddPanier">Ajouter au panier</button>
             </li>
             <li class="content">
                 <img src="../src/DxC9tu4WoAEP4ho.jpg" alt="" class="image" />

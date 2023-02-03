@@ -15,3 +15,100 @@
     top: 1em;
     margin: auto;
 }
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4em 5em 6em 5em;
+    gap: 1em;
+    row-gap: 2em;
+    list-style-type: none;
+}
+li {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    border-radius: 12px;
+    padding: 10px;
+    height: 10em;
+    justify-content: space-between;
+}
+.spaced {
+    display: flex;
+    flex-direction: row;
+}
+.image {
+    display: inline-block;
+    width: 20%;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 12px;
+}
+.titre {
+    font-weight: bolder;
+    font-size: 2.5em;
+    margin: auto;
+    letter-spacing: 0.1em;
+    width: 4em;
+}
+.prix {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 1em;
+    letter-spacing: 1px;
+    width: 4em;
+    margin: auto 2em;
+}
+.qte{
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 1em;
+    letter-spacing: 1px;
+    width: 10em;
+    margin: auto 0em auto 0em;
+}
+.AddPanier {
+    position: relative;
+    padding: 0.5em;
+    font-weight: 600;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+    color: black;
+    border: 2px black solid;
+    border-radius: 12px;
+    text-transform: uppercase;
+    outline: 0;
+    overflow: hidden;
+    background: none;
+    z-index: 0;
+    cursor: pointer;
+}
+.AddPanier:hover {
+    color: whitesmoke;
+    transition: color 0.2s ease-in-out;
+}
+.AddPanier:before {
+    content: "";
+    position: absolute;
+    background: black;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    top: 0%;
+    z-index: -1;
+    transition: right 0.2s ease-in-out;
+}
+.AddPanier:hover:before {
+    right: 0%;
+}
+.total{
+    font-size: 2em;
+}
+.button{
+    display: flex;
+    align-items: center;
+}
+.noButton{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
